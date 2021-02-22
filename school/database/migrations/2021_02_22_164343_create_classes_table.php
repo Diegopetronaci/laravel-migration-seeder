@@ -15,6 +15,9 @@ class CreateClassesTable extends Migration
     {
         Schema::create('classes', function (Blueprint $table) {
             $table->id();
+            $table->integer('numero');
+            $table->integer('piano');
+            $table->integer('max_studenti');
             $table->timestamps();
         });
     }
