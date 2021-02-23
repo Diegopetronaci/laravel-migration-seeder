@@ -12,23 +12,7 @@ class ClasseSeeder extends Seeder
      */
     public function run()
     {
-        $class_list = [
-            [
-                'numero' => '209',
-                'piano' => '2',
-                'max_studenti' => '200',
-            ],
-            [
-                'numero' => '304',
-                'piano' => '3',
-                'max_studenti' => '305',
-            ],
-            [
-                'numero' => '105',
-                'piano' => '1',
-                'max_studenti' => '260',
-            ]
-        ];
+        $class_list = config();
 
         foreach ($class_list as $student) {
             $newClass = new Classe();
