@@ -11,6 +11,7 @@ class CreateCorsosTable extends Migration
      *
      * @return void
      */
+    
     public function up()
     {
         Schema::create('corsos', function (Blueprint $table) {

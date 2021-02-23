@@ -12,7 +12,7 @@ class ClasseSeeder extends Seeder
      */
     public function run()
     {
-        $class_list = config();
+        $class_list = config('class_list');
 
         foreach ($class_list as $student) {
             $newClass = new Classe();
